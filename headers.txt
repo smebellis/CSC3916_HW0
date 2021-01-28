@@ -1,0 +1,88 @@
+>>> Request Headers:
+
+    User-Agent: PostmanRuntime/7.26.10
+        
+        - A string the lets servers and network peers identify the application, operating system, vendor, and/or version of the requestion user-agent
+
+    Accept: */*
+        
+        - Advertises which content types the client is able to understand.
+
+    Postman-Token: defee8e8-6386-49bb-abe7-8079ddcf3352
+        
+        - This is primarily used to bypass a bug in Chrome. If an XMLHttpRequest is pending and another request is sent with the same parameters then 
+        Chrome returns the same response for both of them. Sending a random token avoids this issue. This can also help you distinguish between request 
+        on the server side. 
+
+    Host: www.googleapis.com
+
+        - Specifices the host and port number of the server to which the request is being sent. If no poer is included, the default port for the service
+        requested is implied
+
+    Accept-Encoding: gzip, deflate, br
+
+        - Advertises which content encoding, usually a compression algorithm, the client is able to understand.  
+
+    Connection: keep-alive
+
+        - Controls wherther or not the network connection stays open after the current transaction finishes.  
+
+>>> Response Headers:
+
+    Content-Type: application/json; charset=UTF-8
+
+        - Tells the client what the content type of the returned content actually is.
+
+    Vary: Origin
+
+        - Determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server
+        Origin indicates a header name to take into account when deciding whether or not a cached response can be used.
+
+    Vary: X-Origin
+
+        - Determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server
+         X-Origin indicates a header name to take into account when deciding whether or not a cached response can be used.
+
+    Vary: Referer
+
+        - Determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server. 
+        Referer indicates a header name to take into account when deciding whether or not a cached response can be used.
+
+    Content-Encoding: gzip
+
+        - This is the originial format of the UNIX gzip program.  The HTTP/1.1 standard also recommends that the servers supporting this content-encoding should 
+        recgonize x-gzip as an alias, for compatibility purposes.
+
+    Date: Thu, 28 Jan 2021 20:19:20 GMT
+
+        - Contains the date and time at which the message was originated. 
+
+    Server: ESF
+
+        - Describes the software used by the origin server that handled the request.
+
+    Cache-Control: private
+
+        - Holds directives (instructions) for caching in both requests and responses.  Private means the response may be stored only by a browser's cache, even If
+        the response is normally non-cacheable.
+
+    X-XSS-Protection: 0
+
+        - Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+
+    X-Frame-Options: SAMEORIGIN
+
+        - Used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>.  Sites can use thie to avoid 
+        click-jacking attacks.
+
+    X-Content-Type-Options: nosniff
+
+        - A marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed.  
+
+    Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+        - Used to advertise alternatice services through which the same resource can be reached.  An althernative service is defined by a protocol/host/port combination
+
+    Transfer-Encoding: chunked
+
+        - Specifices the form of encoding used to safely transfer the payload body to the user. 
